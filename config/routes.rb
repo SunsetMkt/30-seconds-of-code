@@ -7,4 +7,13 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  # get "snippets" => "snippets#index", as: :snippets
+  # get "snippets/:id" => "snippets#show", as: :snippet
+
+  # get "collections" => "collections#index", as: :collections
+  # get "collections/:id" => "collections#show", as: :collection
+
+  # get "languages" => "languages#index", as: :languages
+  # get "languages/:id" => "languages#show", as: :language
+  # get "feed" => "feed#index", as: :feed
 end
