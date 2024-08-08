@@ -7,7 +7,7 @@
   "author": "chalarangelo",
   "type": "module",
   "devDependencies": {
-    "astro": "^4.0.0",
+    "astro": "^4.13.1",
     "eslint": "^8.50.0",
     "eslint-config-prettier": "^9.0.0",
     "front-matter": "^4.0.2",
@@ -31,20 +31,24 @@
     "vitest": "^2.0.4"
   },
   "imports": {
-    "#parsley": ["./parsley/parsley.js"],
-    "#search": ["./search/search.js"],
-    "#components/*": "./astro/components/*.astro",
-    "#layouts/*": "./astro/layouts/*.astro",
-    "#settings": ["./astro/settings.js"]
+    "#src/*": [
+      "./src/*"
+    ],
+    "#spec/*": [
+      "./spec/*"
+    ]
   },
   "scripts": {
-    "predev": "bin/rake content:prepare:dev",
+    "predev": "bin/prepare dev",
     "dev": "astro dev --port 8000",
     "start": "astro dev --port 8000",
-    "prebuild": "bin/rake content:prepare:full",
+    "prebuild": "bin/prepare full",
     "build": "astro build",
     "preview": "astro preview --port 9000",
-    "test": "vitest"
+    "test": "vitest",
+    "create": "bin/prepare create",
+    "console": "bin/console",
+    "watch": "npm run dev & bin/prepare watch"
   },
   "license": "MIT",
   "repository": {

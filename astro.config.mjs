@@ -1,5 +1,5 @@
 import { defineConfig } from 'astro/config';
-import settings from '#settings';
+import settings from '#src/astro/settings.js';
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,5 +8,5 @@ export default defineConfig({
     inlineStylesheets: 'always',
   },
   compressHTML: true,
-  srcDir: 'astro',
+  srcDir: 'src/astro',
 });

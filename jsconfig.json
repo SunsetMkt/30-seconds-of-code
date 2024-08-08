@@ -4,11 +4,8 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-      "#parsley": ["./parsley/parsley.js"],
-      "#search": ["./search/search.js"],
-      "#components/*" : ["./astro/components/*.astro"],
-      "#layouts/*": ["./astro/layouts/*.astro"],
-      "#settings": ["./astro/settings.js"]
+      "#src/*": ["./src/*"],
+      "#spec/*": ["./spec/*"]
     }
   },
   "exclude": ["node_modules"]
